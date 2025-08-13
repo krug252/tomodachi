@@ -1,0 +1,317 @@
+ body {
+        font-family: Arial, sans-serif;
+        background-color: #1c1c1c;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .cart-item {
+        display: flex;
+        align-items: center;
+        background-color: #2a2a2a;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    .cart-item img {
+        width: 70px;
+        height: 70px;
+        border-radius: 8px;
+        margin-right: 15px;
+    }
+    .item-info {
+        flex: 1;
+    }
+    .item-info h2 {
+        font-size: 16px;
+        margin: 0;
+    }
+    .item-info p {
+        margin: 5px 0;
+        color: #ccc;
+    }
+    .quantity-control {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .quantity-control button {
+        background-color: #ff3d3d;
+        border: none;
+        color: white;
+        font-size: 18px;
+        padding: 4px 8px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .quantity-control span {
+        min-width: 20px;
+        text-align: center;
+    }
+    .extras {
+        background-color: #2a2a2a;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+    .extras label {
+        display: block;
+        margin: 5px 0;
+        cursor: pointer;
+    }
+    .summary {
+        background-color: #2a2a2a;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+    .summary div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+    .finalizar {
+        background-color: #ff3d3d;
+        color: white;
+        border: none;
+        padding: 15px;
+        font-size: 16px;
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+/* Responsividade para tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 550px;
+        padding: 18px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 18px;
+    }
+    
+    .cart-item {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .cart-item img {
+        width: 65px;
+        height: 65px;
+        margin-right: 12px;
+    }
+    
+    .item-info h2 {
+        font-size: 15px;
+    }
+    
+    .quantity-control button {
+        font-size: 16px;
+        padding: 3px 7px;
+    }
+    
+    .extras, .summary {
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .finalizar {
+        padding: 14px;
+        font-size: 15px;
+    }
+}
+
+/* Responsividade para dispositivos móveis grandes (481px - 767px) */
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+        margin: 0 10px;
+    }
+    
+    h1 {
+        font-size: 1.6em;
+        margin-bottom: 15px;
+    }
+    
+    .cart-item {
+        padding: 10px;
+        margin-bottom: 10px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .cart-item img {
+        width: 60px;
+        height: 60px;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .item-info {
+        text-align: center;
+    }
+    
+    .item-info h2 {
+        font-size: 14px;
+    }
+    
+    .item-info p {
+        font-size: 0.9em;
+    }
+    
+    .quantity-control {
+        justify-content: center;
+        margin-top: 5px;
+    }
+    
+    .quantity-control button {
+        font-size: 14px;
+        padding: 2px 6px;
+    }
+    
+    .extras, .summary {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .extras label {
+        font-size: 0.9em;
+    }
+    
+    .summary div {
+        font-size: 0.9em;
+    }
+    
+    .finalizar {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* Responsividade para dispositivos móveis pequenos (até 480px) */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+        margin: 0 5px;
+    }
+    
+    h1 {
+        font-size: 1.4em;
+        margin-bottom: 12px;
+    }
+    
+    .cart-item {
+        padding: 8px;
+        margin-bottom: 8px;
+        gap: 8px;
+    }
+    
+    .cart-item img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .item-info h2 {
+        font-size: 13px;
+    }
+    
+    .item-info p {
+        font-size: 0.8em;
+    }
+    
+    .quantity-control button {
+        font-size: 12px;
+        padding: 1px 5px;
+    }
+    
+    .extras, .summary {
+        padding: 8px;
+        margin-bottom: 8px;
+    }
+    
+    .extras label {
+        font-size: 0.8em;
+        margin: 3px 0;
+    }
+    
+    .summary div {
+        font-size: 0.8em;
+        margin-bottom: 6px;
+    }
+    
+    .finalizar {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+
+/* Responsividade para telas muito pequenas (até 320px) */
+@media screen and (max-width: 320px) {
+    .container {
+        padding: 8px;
+        margin: 0 3px;
+    }
+    
+    h1 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    
+    .cart-item {
+        padding: 6px;
+        margin-bottom: 6px;
+        gap: 6px;
+    }
+    
+    .cart-item img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .item-info h2 {
+        font-size: 12px;
+    }
+    
+    .item-info p {
+        font-size: 0.75em;
+    }
+    
+    .quantity-control button {
+        font-size: 11px;
+        padding: 1px 4px;
+    }
+    
+    .extras, .summary {
+        padding: 6px;
+        margin-bottom: 6px;
+    }
+    
+    .extras label {
+        font-size: 0.75em;
+        margin: 2px 0;
+    }
+    
+    .summary div {
+        font-size: 0.75em;
+        margin-bottom: 5px;
+    }
+    
+    .finalizar {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,199 @@
+.topo {
+  background-color: #DA0037;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4em 0 4em;
+}
+
+.logo-topo {
+  width: 100px;
+}
+
+ .menu__item {
+  color: white;
+  margin-left: 50px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.menu a:hover {
+  color: black;
+}
+
+.pedido {
+  color: #444444;
+    margin-left: 50px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+
+.imagem-central__imagem {
+  max-width: 80%;
+  height: auto;
+
+  
+
+ 
+}
+
+.imagem-central {
+  text-align: center;
+  margin-top: 2em;
+}
+
+
+.legenda {
+  color: #ccc;
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* Responsividade para tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .container-topo {
+    margin: 0 2em 0 2em;
+  }
+  
+  .menu__item {
+    margin-left: 30px;
+    font-size: 18px;
+  }
+  
+  .pedido {
+    margin-left: 30px;
+    font-size: 20px;
+  }
+  
+  .imagem-central__imagem {
+    max-width: 90%;
+  }
+}
+
+/* Responsividade para dispositivos móveis grandes (481px - 767px) */
+@media screen and (max-width: 767px) {
+  .topo {
+    padding: 8px 15px;
+  }
+  
+  .container-topo {
+    margin: 0 1em 0 1em;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .logo-topo {
+    width: 80px;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .menu__item {
+    margin-left: 0;
+    font-size: 16px;
+  }
+  
+  .pedido {
+    margin-left: 0;
+    font-size: 18px;
+  }
+  
+  .imagem-central__imagem {
+    max-width: 95%;
+  }
+  
+  .imagem-central {
+    margin-top: 1.5em;
+  }
+}
+
+/* Responsividade para dispositivos móveis pequenos (até 480px) */
+@media screen and (max-width: 480px) {
+  .topo {
+    padding: 6px 10px;
+  }
+  
+  .container-topo {
+    margin: 0 0.5em 0 0.5em;
+    gap: 10px;
+  }
+  
+  .logo-topo {
+    width: 70px;
+  }
+  
+  .menu {
+    gap: 15px;
+  }
+  
+  .menu__item {
+    font-size: 14px;
+  }
+  
+  .pedido {
+    font-size: 16px;
+  }
+  
+  .imagem-central__imagem {
+    max-width: 100%;
+  }
+  
+  .imagem-central {
+    margin-top: 1em;
+  }
+  
+  .legenda {
+    font-size: 13px;
+  }
+}
+
+/* Responsividade para telas muito pequenas (até 320px) */
+@media screen and (max-width: 320px) {
+  .container-topo {
+    margin: 0 0.3em 0 0.3em;
+  }
+  
+  .logo-topo {
+    width: 60px;
+  }
+  
+  .menu {
+    gap: 10px;
+  }
+  
+  .menu__item {
+    font-size: 12px;
+  }
+  
+  .pedido {
+    font-size: 14px;
+  }
+  
+  .legenda {
+    font-size: 12px;
+  }
+}
+

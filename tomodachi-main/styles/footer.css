@@ -1,0 +1,209 @@
+.rodape {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px 0;
+  margin-top: 4em;
+}
+
+.rodape-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 40px;
+  text-align: center;
+}
+
+.mapa {
+ margin: 0 0 2em 5em;
+  
+}
+
+.endereco, .contato {
+  flex: 1 1 200px;
+  text-align: left;
+  margin: 2em 0 0 2em;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.endereco h2 {
+  color: #d10036;
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.logo {
+  width: 100px;
+  margin: 10px 0;
+}
+
+.telefone-label {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+.telefone {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.icones-sociais {
+  display: flex;
+  gap: 10px;
+}
+
+.icone {
+  width: 24px;
+  height: 24px;
+}
+
+.rodape-final {
+  background-color: #d10036;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Responsividade para tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .rodape {
+    margin-top: 8em;
+    padding: 30px 15px 0;
+  }
+  
+  .rodape-conteudo {
+    gap: 30px;
+  }
+  
+  .mapa {
+    margin: 0 0 1.5em 3em;
+  }
+  
+  .endereco, .contato {
+    margin: 1.5em 0 0 1.5em;
+    font-size: 18px;
+  }
+  
+  .endereco h2 {
+    font-size: 20px;
+  }
+  
+  .logo {
+    width: 90px;
+  }
+}
+
+/* Responsividade para dispositivos móveis grandes (481px - 767px) */
+@media screen and (max-width: 767px) {
+  .rodape {
+    margin-top: 6em;
+    padding: 25px 10px 0;
+  }
+  
+  .rodape-conteudo {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  
+  .mapa {
+    margin: 0 0 1em 0;
+    text-align: center;
+  }
+  
+  .endereco, .contato {
+    margin: 1em 0 0 0;
+    font-size: 16px;
+    text-align: center;
+    flex: 1 1 100%;
+  }
+  
+  .endereco h2 {
+    font-size: 18px;
+  }
+  
+  .logo {
+    width: 80px;
+  }
+  
+  .icones-sociais {
+    justify-content: center;
+  }
+}
+
+/* Responsividade para dispositivos móveis pequenos (até 480px) */
+@media screen and (max-width: 480px) {
+  .rodape {
+    margin-top: 4em;
+    padding: 20px 8px 0;
+  }
+  
+  .rodape-conteudo {
+    gap: 20px;
+  }
+  
+  .mapa {
+    margin: 0 0 0.8em 0;
+  }
+  
+  .endereco, .contato {
+    margin: 0.8em 0 0 0;
+    font-size: 14px;
+  }
+  
+  .endereco h2 {
+    font-size: 16px;
+  }
+  
+  .logo {
+    width: 70px;
+  }
+  
+  .telefone {
+    font-size: 14px;
+  }
+  
+  .rodape-final {
+    padding: 12px 8px;
+    font-size: 12px;
+  }
+}
+
+/* Responsividade para telas muito pequenas (até 320px) */
+@media screen and (max-width: 320px) {
+  .rodape {
+    margin-top: 3em;
+    padding: 15px 5px 0;
+  }
+  
+  .rodape-conteudo {
+    gap: 15px;
+  }
+  
+  .endereco, .contato {
+    font-size: 12px;
+  }
+  
+  .endereco h2 {
+    font-size: 14px;
+  }
+  
+  .logo {
+    width: 60px;
+  }
+  
+  .telefone {
+    font-size: 12px;
+  }
+  
+  .rodape-final {
+    padding: 10px 5px;
+    font-size: 11px;
+  }
+}

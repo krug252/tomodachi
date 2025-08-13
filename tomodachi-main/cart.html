@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/cart.css">
+<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/header.css">
+<title>Carrinho - Tomodachi</title>
+
+</head>
+<body>
+
+    <header class="topo">
+    <div class="container-topo">
+      <img src="assets/Group 1.svg" alt="Logo Tomodachi" class="logo-topo">
+      <nav class="menu">
+<h1 class="pedidos__titulo">SEU CARRINHO</h1>
+
+        
+       
+      </nav>
+    </div>
+  </header>
+    <div class="container">
+
+
+        <!-- Item 1 -->
+        <div class="cart-item">
+            <img src="assets/imagem__destaque1.svg" alt="Item">
+            <div class="item-info">
+                <h2>Temaki de Salmão</h2>
+                <p>R$ 25,00</p>
+                <div class="quantity-control">
+                    <button onclick="updateQuantity(this, -1)">-</button>
+                    <span>1</span>
+                    <button onclick="updateQuantity(this, 1)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="cart-item">
+            <img src="assets/imagem__destaque1.svg" alt="Item">
+            <div class="item-info">
+                <h2>Sushi Especial</h2>
+                <p>R$ 40,00</p>
+                <div class="quantity-control">
+                    <button onclick="updateQuantity(this, -1)">-</button>
+                    <span>2</span>
+                    <button onclick="updateQuantity(this, 1)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Adicionais -->
+        <div class="extras">
+            <h3>Adicionais</h3>
+            <label><input type="checkbox" value="5" onchange="updateTotal()"> Molho Extra (+ R$ 5,00)</label>
+            <label><input type="checkbox" value="3" onchange="updateTotal()"> Gengibre (+ R$ 3,00)</label>
+        </div>
+
+        <!-- Resumo -->
+        <div class="summary">
+            <div><span>Subtotal</span><span id="subtotal">R$ 0,00</span></div>
+            <div><span>Taxa de entrega</span><span id="taxa">R$ 10,00</span></div>
+            <div><strong>Total</strong><strong id="total">R$ 0,00</strong></div>
+        </div>
+
+        <button class="finalizar">Finalizar Pedido</button>
+    </div>
+
+<script>
+    function updateQuantity(btn, change) {
+        const quantitySpan = btn.parentElement.querySelector("span");
+        let quantity = parseInt(quantitySpan.textContent);
+        quantity = Math.max(1, quantity + change);
+        quantitySpan.textContent = quantity;
+        updateTotal();
+    }
+
+    function updateTotal() {
+        let subtotal = 0;
+        document.querySelectorAll(".cart-item").forEach(item => {
+            const priceText = item.querySelector("p").textContent.replace("R$ ", "").replace(",", ".");
+            const price = parseFloat(priceText);
+            const quantity = parseInt(item.querySelector(".quantity-control span").textContent);
+            subtotal += price * quantity;
+        });
+
+        document.querySelectorAll(".extras input:checked").forEach(extra => {
+            subtotal += parseFloat(extra.value);
+        });
+
+        document.getElementById("subtotal").textContent = "R$ " + subtotal.toFixed(2).replace(".", ",");
+        const taxa = 10.00;
+        document.getElementById("total").textContent = "R$ " + (subtotal + taxa).toFixed(2).replace(".", ",");
+    }
+
+    updateTotal();
+</script>
+</body>
+</html>

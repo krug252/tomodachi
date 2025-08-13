@@ -1,0 +1,178 @@
+.ofertas {
+  margin: 6em 8em 1em 8em;
+}
+
+.ofertas__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4em;
+}
+
+.oferecemos {
+  flex: 2;
+}
+
+.ofertas__titulo {
+  font-size: 32px;
+  font-weight: 450;
+  margin-bottom: 1em;
+}
+
+.ofertas__texto {
+  font-size: 22px;
+  line-height: 1.6;
+  font-weight: 400;
+  margin: 0;
+}
+
+.horarios {
+  flex: 1;
+  text-align: left;
+}
+
+.horarios__titulo {
+  font-size: 26px;
+  font-weight: 450;
+  margin-bottom: 1em;
+}
+
+.horarios__texto {
+  font-size: 22px;
+  line-height: 1.6;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+}
+
+.horarios__texto strong {
+  font-weight: 700;
+}
+
+/* Responsividade para tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .ofertas {
+    margin: 5em 5em 1em 5em;
+  }
+  
+  .ofertas__container {
+    gap: 3em;
+  }
+  
+  .ofertas__titulo {
+    font-size: 28px;
+  }
+  
+  .ofertas__texto {
+    font-size: 20px;
+  }
+  
+  .horarios__titulo {
+    font-size: 24px;
+  }
+  
+  .horarios__texto {
+    font-size: 20px;
+  }
+}
+
+/* Responsividade para dispositivos móveis grandes (481px - 767px) */
+@media screen and (max-width: 767px) {
+  .ofertas {
+    margin: 4em 3em 1em 3em;
+  }
+  
+  .ofertas__container {
+    flex-direction: column;
+    gap: 2.5em;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .oferecemos {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .ofertas__titulo {
+    font-size: 24px;
+    margin-bottom: 0.8em;
+  }
+  
+  .ofertas__texto {
+    font-size: 18px;
+  }
+  
+  .horarios {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .horarios__titulo {
+    font-size: 20px;
+    margin-bottom: 0.8em;
+  }
+  
+  .horarios__texto {
+    font-size: 18px;
+  }
+}
+
+/* Responsividade para dispositivos móveis pequenos (até 480px) */
+@media screen and (max-width: 480px) {
+  .ofertas {
+    margin: 3em 2em 1em 2em;
+  }
+  
+  .ofertas__container {
+    gap: 2em;
+  }
+  
+  .ofertas__titulo {
+    font-size: 20px;
+    margin-bottom: 0.6em;
+  }
+  
+  .ofertas__texto {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .horarios__titulo {
+    font-size: 18px;
+    margin-bottom: 0.6em;
+  }
+  
+  .horarios__texto {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/* Responsividade para telas muito pequenas (até 320px) */
+@media screen and (max-width: 320px) {
+  .ofertas {
+    margin: 2.5em 1.5em 1em 1.5em;
+  }
+  
+  .ofertas__container {
+    gap: 1.5em;
+  }
+  
+  .ofertas__titulo {
+    font-size: 18px;
+    margin-bottom: 0.5em;
+  }
+  
+  .ofertas__texto {
+    font-size: 14px;
+  }
+  
+  .horarios__titulo {
+    font-size: 16px;
+    margin-bottom: 0.5em;
+  }
+  
+  .horarios__texto {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomodachi</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/sobre..css">
+  <link rel="stylesheet" href="styles/ofertas.css">
+  <link rel="stylesheet" href="styles/buffet.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/pedidos.css">
+  <link rel="stylesheet" href="styles/newsletter.css">
+</head>
+
+<body>
+
+  <header class="topo">
+    <div class="container-topo">
+      <img src="assets/Group 1.svg" alt="Logo Tomodachi" class="logo-topo">
+      <nav class="menu">
+        <a class="menu__item" href="#sobre">SOBRE</a>
+        <a class="menu__item" href="#menu">MENU</a>
+        <a class="menu__item" href="#contato">NOS ENCONTRE</a>
+        <a href="pedidos.html" class="pedido">NOSSO CARDÁPIO</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="imagem-central">
+    <img src="assets/foto_inicial.svg" alt="Arte japonesa tradicional" class="imagem-central__imagem">
+    <p class="legenda">Tomodachi (ともだち) é uma palavra japonesa que significa amigo(s).</p>
+  </section>
+
+
+  <section id="sobre" class="sobre">
+    <div class="texto">
+      <div class="sobre__texto">
+        <h2 class="sobre__titulo">CONHEÇA O TOMODACHI</h2>
+        <p class="sobre__texto__paragrafo">
+          Muito antes de se tornar uma paixão mundial, o sushi nasceu como uma técnica de conservação de peixe
+          no arroz fermentado, há mais de mil anos no Sudeste Asiático. Com o tempo, o prato evoluiu, ganhou
+          novos sabores no Japão e, hoje, representa uma verdadeira arte gastronômica que une simplicidade,
+          precisão e respeito aos ingredientes.
+        </p>
+        <p class="sobre__texto__paragrafo">
+          Descubra a verdadeira essência da culinária japonesa em um ambiente acolhedor e sofisticado. No
+          Tomodachi, cada peça é feita com ingredientes frescos e selecionados com rigor. Venha viver uma
+          jornada de sabores do Japão!
+        </p>
+      </div>
+      <img src="assets/foto_parede.svg" alt="Arte estrutura japonesa" class="texto__imagem">
+    </div>
+
+    <div class="imagens">
+      <img src="assets/fotoparedemulher.svg" alt="Arte japonesa na parede" class="imagem-superior">
+      <img src="assets/foto__sushi.svg" alt="Sushis sendo preparados" class="imagem-inferior">
+    </div>
+  </section>
+
+  
+  <section id="menu" class="ofertas">
+    <div class="ofertas__container">
+      <div class="oferecemos">
+        <h2 class="ofertas__titulo">O QUE OFERECEMOS</h2>
+        <p class="ofertas__texto">
+          Para além do delivery, oferecemos também a experiência completa do nosso rodízio presencial, com variedade,
+          frescor e excelência no atendimento. Confira os valores abaixo e escolha a opção que combina com você!
+        </p>
+
+      <br>
+      <p class="ofertas__texto">  <a class="pedidos__introducao__texto__link" href="https://tomodachi.mandarpedido.com/mobile/home">Clique aqui</a> para aproveitar o delivery e receba seu sushi fresquinho!</p>
+      </div>
+
+      <div class="horarios">
+        <h2 class="horarios__titulo">NOSSOS <br> HORÁRIOS</h2>
+        <p class="horarios__texto">Almoço de terça a sábado das <strong>11h30 às 13h30</strong></p>
+        <p class="horarios__texto">Jantar de terça a domingo das <strong>19h às 22h</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__buffets">
+    <div class="buffets">
+      <div class="buffet">
+        <h3 class="buffet__titulo">Buffet <span class="destaque">Tradicional</span></h3>
+        <p>Almoço — R$ 46,90<br>Jantar — R$ 59,90</p>
+        <p class="descricao">
+          Sushi, hot, yakisoba ou harumaki (conforme disponibilidade), sunomono
+        </p>
+      </div>
+
+      <div class="buffet">
+        <h3>Buffet <span class="destaque">Especial</span></h3>
+        <p>Almoço — R$ 74,90<br>Jantar — R$ 89,90</p>
+        <p class="descricao">
+          Sushi, hot, yakisoba ou harumaki (conforme disponibilidade), sunomono, 10 lâminas sashimi, 1 temaki
+        </p>
+      </div>
+
+      <div class="buffet">
+        <h3>Buffet <span class="destaque">Tomodachi</span></h3>
+        <p>Almoço — R$ 139,00<br>Jantar — R$ 159,00</p>
+        <p class="descricao">
+          Sushi, hot, yakisoba ou harumaki (conforme disponibilidade), sunomono, sashimis (salmão, atum, lula
+          defumada), gunkan, joy, especial do chefe, shake brócolis e temakis (incluso peças com camarão, conforme
+          solicitação)
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="newsletter">
+    <div class="newsletter__container">
+      <div class="newsletter__content">
+        <h2 class="newsletter__titulo">FIQUE POR DENTRO DAS PROMOÇÕES!</h2>
+        <p class="newsletter__descricao">
+          Cadastre seu email e receba ofertas exclusivas, novidades do cardápio e promoções especiais do Tomodachi!
+        </p>
+        <form class="newsletter__form" id="newsletterForm">
+          <div class="newsletter__input-group">
+            <input 
+              type="email" 
+              class="newsletter__input" 
+              placeholder="Seu melhor email" 
+              required
+              id="newsletterEmail"
+            >
+            <button type="submit" class="newsletter__button">
+              <span class="newsletter__button-text">CADASTRAR</span>
+            </button>
+          </div>
+          <div class="newsletter__checkbox-group">
+            <label class="newsletter__checkbox-label">
+              <input type="checkbox" class="newsletter__checkbox" required>
+              <span class="newsletter__checkbox-text">
+                Concordo em receber emails com promoções e ofertas do Tomodachi
+              </span>
+            </label>
+          </div>
+        </form>
+        <p class="newsletter__info">
+          ✨ Promoções exclusivas • 🍣 Novidades do cardápio • 💰 Descontos especiais
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="contato" class="rodape">
+    <div class="rodape-conteudo">
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1734.4315145844128!2d-51.163429897600764!3d-29.607667750081077!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519453d069bb6f5%3A0xdf75c6a33bdf241f!2sTomodachi%20japanese%20food!5e0!3m2!1spt-BR!2sbr!4v1748306210337!5m2!1spt-BR!2sbr" width="291" height="291" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="endereco">
+        <h2><span class="vermelho">LOCALIZAÇÃO</span></h2>
+        <p>
+          Av Presidente Lucena, nº 1919 – Sala 03<br>
+          Harmonia – 93900000<br>
+          Ivoti - RS
+        </p>
+      </div>
+
+      <div class="contato">
+        <img src="assets/Group 2-1.svg" alt="Logo Tomodachi" class="logo">
+        <p class="telefone-label">TELEFONE:</p>
+        <p class="telefone">51998423675</p>
+        <div class="icones-sociais">
+          <a href="https://www.instagram.com/tomodachijapanesefood/"><img src="assets/instagram-icon 1.svg" alt="Instagram" class="icone"></a>
+          <a href=""><img src="assets/whatsapp-white-icon 1.svg" alt="WhatsApp" class="icone"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <section class="rodape__header">
+    <div class="rodape-final">
+      <p>
+        @2025, Sushi Tomodachi. Todos os direitos reservados.
+        Tomodahi Sushi Restaurante Ltda. |
+        Av. Pres. Lucena, 1919 - Harmonia, Ivoti - RS, 93900-000 |
+        CNPJ: 37.412.377/0001-68 - 37412377000168
+      </p>
+    </div>
+  </section>
+
+  
+  <script>
+    (function () {
+      const links = document.querySelectorAll('a[href^="#"]');
+      const header = document.querySelector('header.topo');
+
+      function getHeaderHeight() {
+        return header ? header.offsetHeight : 0;
+      }
+
+      function smoothScrollTo(targetY, duration) {
+        const startY = window.scrollY || window.pageYOffset;
+        const distance = targetY - startY;
+        const startTime = performance.now();
+
+        function easeInOutCubic(t) {
+          return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+        }
+
+        function step(now) {
+          const elapsed = now - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const eased = easeInOutCubic(progress);
+          window.scrollTo(0, startY + distance * eased);
+          if (elapsed < duration) requestAnimationFrame(step);
+        }
+
+        requestAnimationFrame(step);
+      }
+
+      function scrollToHash(hash) {
+        const el = document.querySelector(hash);
+        if (!el) return;
+        const offset = getHeaderHeight() + 8; // 8px de respiro
+        const rectTop = el.getBoundingClientRect().top;
+        const targetY = rectTop + window.scrollY - offset;
+        smoothScrollTo(targetY, 1200); // 1000ms
+      }
+
+      links.forEach(link => {
+        link.addEventListener('click', (e) => {
+          const hash = link.getAttribute('href');
+          if (!hash || hash === '#') return;
+          e.preventDefault();
+          scrollToHash(hash);
+          // Atualiza a hash sem pular instantaneamente
+          history.pushState(null, '', hash);
+        });
+      });
+
+      // Se a página abrir com hash na URL, faz scroll suave após carregar
+      if (location.hash) {
+        window.addEventListener('load', () => scrollToHash(location.hash));
+      }
+    })();
+
+    // Funcionalidade da Newsletter
+    document.addEventListener('DOMContentLoaded', function() {
+      const newsletterForm = document.getElementById('newsletterForm');
+      const newsletterEmail = document.getElementById('newsletterEmail');
+      const newsletterButton = document.querySelector('.newsletter__button');
+
+      if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          const email = newsletterEmail.value.trim();
+          const checkbox = document.querySelector('.newsletter__checkbox');
+          
+          // Validação básica
+          if (!email || !isValidEmail(email)) {
+            showMessage('Por favor, insira um email válido.', 'error');
+            return;
+          }
+          
+          if (!checkbox.checked) {
+            showMessage('Por favor, aceite receber emails com promoções.', 'error');
+            return;
+          }
+          
+          // Simula envio (aqui você pode integrar com seu backend)
+          newsletterButton.disabled = true;
+          newsletterButton.innerHTML = '<span class="newsletter__button-text">ENVIANDO...</span>';
+          
+          setTimeout(() => {
+            showMessage('Email cadastrado com sucesso! Você receberá nossas promoções em breve.', 'success');
+            newsletterForm.reset();
+            newsletterButton.disabled = false;
+            newsletterButton.innerHTML = '<span class="newsletter__button-text">CADASTRAR</span>';
+          }, 2000);
+        });
+      }
+      
+      // Validação de email
+      function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+      
+      // Função para mostrar mensagens
+      function showMessage(message, type) {
+        // Remove mensagens anteriores
+        const existingMessage = document.querySelector('.newsletter__message');
+        if (existingMessage) {
+          existingMessage.remove();
+        }
+        
+        // Cria nova mensagem
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `newsletter__message newsletter__message--${type}`;
+        messageDiv.textContent = message;
+        
+        // Insere após o formulário
+        const form = document.querySelector('.newsletter__form');
+        form.parentNode.insertBefore(messageDiv, form.nextSibling);
+        
+        // Remove a mensagem após 5 segundos
+        setTimeout(() => {
+          if (messageDiv.parentNode) {
+            messageDiv.remove();
+          }
+        }, 5000);
+      }
+    });
+  </script>
+
+</body>
+</html>

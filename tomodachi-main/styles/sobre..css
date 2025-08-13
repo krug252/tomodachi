@@ -1,0 +1,171 @@
+.sobre {
+  display: flex;
+  margin: 4em 0 3em 0;
+}
+
+.texto {
+ 
+  display: flex;
+  flex-direction: column;
+}
+
+.sobre__titulo {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 1em 0 1.5em 1.5em;
+
+}
+
+.sobre__texto__paragrafo {
+  font-size: 25px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-weight: 350;
+  margin: 0 2em 1em 0;
+
+}
+
+.sobre__texto {
+   margin: 0 2em 1em 5em;
+}
+
+.texto__imagem {
+  margin-left: 0;
+  max-width: 40em;
+}
+
+.imagens {
+  max-width: 40em;
+  display: flex;
+  flex-direction: column;
+  gap: 10.8em;
+  margin-top: 5em;
+}
+
+/* Responsividade para tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .sobre {
+    margin: 3em 0 2em 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sobre__titulo {
+    font-size: 28px;
+    margin: 0.8em 0 1.2em 0;
+    text-align: center;
+  }
+  
+  .sobre__texto__paragrafo {
+    font-size: 22px;
+    margin: 0 1.5em 0.8em 0;
+  }
+  
+  .sobre__texto {
+    margin: 0 1.5em 0.8em 2em;
+  }
+  
+  .texto__imagem {
+    max-width: 35em;
+    margin: 0 auto;
+  }
+  
+  .imagens {
+    max-width: 35em;
+    gap: 8em;
+    margin-top: 3em;
+  }
+}
+
+/* Responsividade para dispositivos móveis grandes (481px - 767px) */
+@media screen and (max-width: 767px) {
+  .sobre {
+    margin: 2em 0 1.5em 0;
+    padding: 0 1em;
+  }
+  
+  .sobre__titulo {
+    font-size: 24px;
+    margin: 0.6em 0 1em 0;
+    text-align: center;
+  }
+  
+  .sobre__texto__paragrafo {
+    font-size: 18px;
+    margin: 0 1em 0.6em 0;
+    text-align: center;
+  }
+  
+  .sobre__texto {
+    margin: 0 1em 0.6em 1em;
+  }
+  
+  .texto__imagem {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .imagens {
+    max-width: 100%;
+    gap: 5em;
+    margin-top: 2em;
+  }
+}
+
+/* Responsividade para dispositivos móveis pequenos (até 480px) */
+@media screen and (max-width: 480px) {
+  .sobre {
+    margin: 1.5em 0 1em 0;
+    padding: 0 0.5em;
+  }
+  
+  .sobre__titulo {
+    font-size: 20px;
+    margin: 0.5em 0 0.8em 0;
+  }
+  
+  .sobre__texto__paragrafo {
+    font-size: 16px;
+    margin: 0 0.5em 0.5em 0;
+    line-height: 1.5;
+  }
+  
+  .sobre__texto {
+    margin: 0 0.5em 0.5em 0.5em;
+  }
+  
+  .imagens {
+    gap: 3em;
+    margin-top: 1.5em;
+  }
+}
+
+/* Responsividade para telas muito pequenas (até 320px) */
+@media screen and (max-width: 320px) {
+  .sobre {
+    margin: 1em 0 0.8em 0;
+    padding: 0 0.3em;
+  }
+  
+  .sobre__titulo {
+    font-size: 18px;
+    margin: 0.4em 0 0.6em 0;
+  }
+  
+  .sobre__texto__paragrafo {
+    font-size: 14px;
+    margin: 0 0.3em 0.4em 0;
+  }
+  
+  .sobre__texto {
+    margin: 0 0.3em 0.4em 0.3em;
+  }
+  
+  .imagens {
+    gap: 2em;
+    margin-top: 1em;
+  }
+}
+
