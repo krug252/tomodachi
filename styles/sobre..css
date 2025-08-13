@@ -1,0 +1,46 @@
+.sobre {
+  display: flex;
+  margin: 4em 0 3em 0;
+}
+
+.texto {
+ 
+  display: flex;
+  flex-direction: column;
+}
+
+.sobre__titulo {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 1em 0 1.5em 1.5em;
+
+}
+
+.sobre__texto__paragrafo {
+  font-size: 25px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-weight: 350;
+  margin: 0 2em 1em 0;
+
+}
+
+.sobre__texto {
+   margin: 0 2em 1em 5em;
+}
+
+.texto__imagem {
+  margin-left: 0;
+  max-width: 40em;
+}
+
+.imagens {
+  max-width: 40em;
+  display: flex;
+  flex-direction: column;
+  gap: 10.8em;
+  margin-top: 5em;
+}
+

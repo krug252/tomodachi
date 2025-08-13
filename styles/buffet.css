@@ -1,0 +1,36 @@
+.section__buffets {
+margin: 6em 8em 1em 8em;
+}
+
+.buffets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5em;
+  margin-top: 2em;
+}
+
+.buffet {
+  flex: 1 1 250px;
+}
+
+.buffet h3 {
+  font-size: 28px;
+  font-family: var(--fonte__principal);
+  font-weight: 400;
+  margin-bottom: 1em;
+
+}
+
+.destaque {
+  color: #d10a40;
+}
+
+.buffet p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.descricao {
+  margin-top: 1.5em;
+  font-size: 24px;
+}

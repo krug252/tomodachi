@@ -1,0 +1,68 @@
+.topo {
+  background-color: #DA0037;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4em 0 4em;
+}
+
+.logo-topo {
+  width: 100px;
+}
+
+ .menu__item {
+  color: white;
+  margin-left: 50px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.menu a:hover {
+  color: black;
+}
+
+.pedido {
+  color: #444444;
+    margin-left: 50px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+
+.imagem-central__imagem {
+  max-width: 80%;
+  height: auto;
+
+  
+
+ 
+}
+
+.imagem-central {
+  text-align: center;
+  margin-top: 2em;
+}
+
+
+.legenda {
+  color: #ccc;
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 300;
+}
