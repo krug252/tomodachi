@@ -60,10 +60,13 @@ margin: 11em 10em 10em 10em;
 }
 
 .cardapio__item img {
-  width: 100%;
+  width: 200px; /* largura fixa */
+  height: 200px; /* altura fixa */
+  object-fit: contain; /* mantém a proporção e não corta a imagem */
   border-radius: 8px;
   margin-bottom: 1em;
 }
+
 
 .cardapio__item h3 {
   margin: 0.5em 0;
