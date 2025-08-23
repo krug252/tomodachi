@@ -29,7 +29,6 @@
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 3em;
 }
 
 .newsletter__titulo {
@@ -83,8 +82,6 @@
 
 .newsletter__input:focus {
   border-color: #DA0037;
-  background-color: #333;
-  box-shadow: 0 0 20px rgba(218, 0, 55, 0.3);
 }
 
 .newsletter__button {
@@ -171,10 +168,6 @@
     padding: 0 1.5em;
   }
   
-  .newsletter__content {
-    padding: 0 1.5em;
-  }
-  
   .newsletter__titulo {
     font-size: 2.2em;
   }
@@ -198,11 +191,7 @@
   }
   
   .newsletter__container {
-    padding: 0 1.5em;
-  }
-  
-  .newsletter__content {
-    padding: 0 1.5em;
+    padding: 0 1em;
   }
   
   .newsletter__titulo {
@@ -244,14 +233,6 @@
     padding: 2.5em 0;
   }
   
-  .newsletter__container {
-    padding: 0 1.2em;
-  }
-  
-  .newsletter__content {
-    padding: 0 1.2em;
-  }
-  
   .newsletter__titulo {
     font-size: 1.5em;
     margin-bottom: 0.6em;
@@ -275,7 +256,7 @@
   
   .newsletter__checkbox-label {
     font-size: 0.8em;
-    padding: 0 0.8em;
+    padding: 0 0.5em;
   }
   
   .newsletter__info {
@@ -287,14 +268,6 @@
 @media screen and (max-width: 320px) {
   .newsletter {
     padding: 2em 0;
-  }
-  
-  .newsletter__container {
-    padding: 0 1em;
-  }
-  
-  .newsletter__content {
-    padding: 0 1em;
   }
   
   .newsletter__titulo {
@@ -318,7 +291,6 @@
   
   .newsletter__checkbox-label {
     font-size: 0.75em;
-    padding: 0 0.6em;
   }
   
   .newsletter__info {

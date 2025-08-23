@@ -1,0 +1,260 @@
+.sobre {
+  display: flex;
+  margin: 4em 0 3em 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0 0em;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.sobre__titulo {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  margin: 1em 0 1.5em 1.5em;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.sobre__texto__paragrafo {
+  font-size: 25px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-weight: 350;
+  margin: 1em 10em 5.5em 1em;
+  max-width: 100%;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+.sobre__texto {
+   margin: 0 2em 1em 5em;
+   max-width: 100%;
+   box-sizing: border-box;
+}
+
+.texto__imagem {
+  margin-left: 0;
+  max-width: 40em;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.linha__main {
+  max-width: 40em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 3em;
+  flex: 1;
+  box-sizing: border-box;
+  padding: 0 0em;
+}
+
+.linha__main .ofertas__texto {
+  font-size: 22px;
+  line-height: 1.6;
+  font-weight: 400;
+  margin: -1em 2em 10em -8em;
+  text-align: justify;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.linha__main .imagem-superior {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 1em;
+}
+
+.linha__main .pedidos__introducao__texto__link {
+  color: inherit;
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+/* Estilos para a seção de horários */
+.horarios {
+  text-align: center;
+  margin: 3em auto 2em auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Responsividade para tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .sobre {
+    margin: 3em 0 2em 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.5em;
+  }
+  
+  .sobre__titulo {
+    font-size: 28px;
+    margin: 0.8em 0 1.2em 0;
+    text-align: center;
+  }
+  
+  .sobre__texto__paragrafo {
+    font-size: 22px;
+    margin: 0 1.5em 0.8em 0;
+    text-align: center;
+  }
+  
+  .sobre__texto {
+    margin: 0 1.5em 0.8em 2em;
+  }
+  
+  .texto__imagem {
+    max-width: 35em;
+    margin: 0 auto;
+  }
+  
+  .linha__main {
+    max-width: 35em;
+    gap: 1.5em;
+    margin-top: 2em;
+    padding: 0;
+  }
+  
+  .linha__main .ofertas__texto {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .horarios {
+    margin: 2em auto 1.5em auto;
+  }
+}
+
+/* Responsividade para dispositivos móveis grandes (481px - 767px) */
+@media screen and (max-width: 767px) {
+  .sobre {
+    margin: 2em 0 1.5em 0;
+    padding: 0 1em;
+    flex-direction: column;
+  }
+  
+  .sobre__titulo {
+    font-size: 24px;
+    margin: 0.6em 0 1em 0;
+    text-align: center;
+  }
+  
+  .sobre__texto__paragrafo {
+    font-size: 18px;
+    margin: 0 1em 0.6em 0;
+    text-align: center;
+  }
+  
+  .sobre__texto {
+    margin: 0 1em 0.6em 1em;
+  }
+  
+  .texto__imagem {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .linha__main {
+    max-width: 100%;
+    gap: 1.5em;
+    margin-top: 2em;
+    padding: 0;
+  }
+  
+  .linha__main .ofertas__texto {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .horarios {
+    margin: 1.5em auto 1em auto;
+  }
+}
+
+/* Responsividade para dispositivos móveis pequenos (até 480px) */
+@media screen and (max-width: 480px) {
+  .sobre {
+    margin: 1.5em 0 1em 0;
+    padding: 0 0.5em;
+  }
+  
+  .sobre__titulo {
+    font-size: 20px;
+    margin: 0.5em 0 0.8em 0;
+  }
+  
+  .sobre__texto__paragrafo {
+    font-size: 16px;
+    margin: 0 0.5em 0.5em 0;
+    line-height: 1.5;
+  }
+  
+  .sobre__texto {
+    margin: 0 0.5em 0.5em 0.5em;
+  }
+  
+  .linha__main {
+    gap: 1em;
+    margin-top: 1.5em;
+  }
+  
+  .linha__main .ofertas__texto {
+    font-size: 16px;
+  }
+  
+  .horarios {
+    margin: 1em auto 0.8em auto;
+  }
+}
+
+/* Responsividade para telas muito pequenas (até 320px) */
+@media screen and (max-width: 320px) {
+  .sobre {
+    margin: 1em 0 0.8em 0;
+    padding: 0 0.3em;
+  }
+  
+  .sobre__titulo {
+    font-size: 18px;
+    margin: 0.4em 0 0.6em 0;
+  }
+  
+  .sobre__texto__paragrafo {
+    font-size: 14px;
+    margin: 0 0.3em 0.4em 0;
+  }
+  
+  .sobre__texto {
+    margin: 0 0.3em 0.4em 0.3em;
+  }
+  
+  .linha__main {
+    gap: 0.8em;
+    margin-top: 1em;
+  }
+  
+  .linha__main .ofertas__texto {
+    font-size: 14px;
+  }
+  
+  .horarios {
+    margin: 0.8em auto 0.6em auto;
+  }
+}
+
