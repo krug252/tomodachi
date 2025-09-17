@@ -82,6 +82,8 @@
 
 .newsletter__input:focus {
   border-color: #DA0037;
+  background-color: #333;
+  box-shadow: 0 0 20px rgba(218, 0, 55, 0.3);
 }
 
 .newsletter__button {

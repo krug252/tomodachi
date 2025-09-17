@@ -4,7 +4,6 @@
 }
 
 .texto {
- 
   display: flex;
   flex-direction: column;
 }
@@ -27,6 +26,15 @@
 
 }
 
+.sobre__texto__paragrafo2 {
+  font-size: 25px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-weight: 350;
+  margin: 0 0.5em 1em 0;
+
+}
+
 .sobre__texto {
    margin: 0 2em 1em 5em;
 }
@@ -34,14 +42,20 @@
 .texto__imagem {
   margin-left: 0;
   max-width: 40em;
+  margin-top: 7em;
 }
 
 .imagens {
-  max-width: 40em;
+  max-width: 50em;
   display: flex;
   flex-direction: column;
   gap: 10.8em;
   margin-top: 5em;
+}
+
+.ofertas__texto {
+  font-weight: 350;
+  margin: 0 2em 1em 0;;
 }
 
 /* Responsividade para tablets (768px - 1024px) */
@@ -73,7 +87,7 @@
   }
   
   .imagens {
-    max-width: 35em;
+    max-width: 45em;
     gap: 8em;
     margin-top: 3em;
   }

@@ -6,7 +6,7 @@
   <title>Tomodachi</title>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/sobre.css">
+  <link rel="stylesheet" href="styles/sobre..css">
   <link rel="stylesheet" href="styles/ofertas.css">
   <link rel="stylesheet" href="styles/buffet.css">
   <link rel="stylesheet" href="styles/footer.css">
@@ -33,25 +33,50 @@
     <p class="legenda">Tomodachi (ともだち) é uma palavra japonesa que significa amigo(s).</p>
   </section>
 
-
   <section id="sobre" class="sobre">
     <div class="texto">
       <div class="sobre__texto">
         <h2 class="sobre__titulo">CONHEÇA O TOMODACHI</h2>
         <p class="sobre__texto__paragrafo">
-          O sushi, nascido há mais de mil anos como técnica de conservação de peixe no arroz fermentado no Sudeste Asiático, evoluiu no Japão até se tornar uma verdadeira arte gastronômica. No Tomodachi, você descobre a essência da culinária japonesa em um ambiente acolhedor, com peças preparadas com precisão e ingredientes frescos e selecionados. Venha viver uma autêntica jornada de sabores do Japão!
+          Muito antes de se tornar uma paixão mundial, o sushi nasceu como uma técnica de conservação de peixe
+          no arroz fermentado, há mais de mil anos no Sudeste Asiático. Com o tempo, o prato evoluiu, ganhou
+          novos sabores no Japão e, hoje, representa uma verdadeira arte gastronômica que une simplicidade,
+          precisão e respeito aos ingredientes.
         </p>
+       
       </div>
       <img src="assets/foto_parede.svg" alt="Arte estrutura japonesa" class="texto__imagem">
     </div>
 
-    <div class="linha__main">
+    <div class="imagens">
       <img src="assets/fotoparedemulher.svg" alt="Arte japonesa na parede" class="imagem-superior">
-      <h3 class="ofertas__titulo">O QUE OFERECEMOS</h3>
-      <p class="ofertas__texto">
-        O restaurante está aberto para almoço de terça a sábado, das 11h30 às 13h30, e para jantar de terça a domingo, das 19h às 22h.
-Além do serviço de delivery, você pode aproveitar a experiência completa de nosso rodízio presencial. Venha desfrutar de uma variedade de pratos frescos e um serviço de excelência. Confira abaixo os valores e escolha a melhor opção para você!
+      <p class="sobre__texto__paragrafo2">
+        Descubra a verdadeira essência da culinária japonesa em um ambiente acolhedor e sofisticado. No
+        Tomodachi, cada peça é feita com ingredientes frescos e selecionados com rigor. Venha viver uma
+        jornada de sabores do Japão!
       </p>
+  </div>
+  
+  </section>
+
+  <section id="menu" class="ofertas">
+    <div class="ofertas__container">
+      <div class="oferecemos">
+        <h2 class="ofertas__titulo">O QUE OFERECEMOS</h2>
+        <p class="sobre__texto__paragrafo">
+          Para além do delivery, oferecemos também a experiência completa do nosso rodízio presencial, com variedade,
+          frescor e excelência no atendimento. Confira os valores abaixo e escolha a opção que combina com você!
+        </p>
+
+      <br>
+      <p class="ofertas__texto">  <a class="pedidos__introducao__texto__link" href="https://tomodachi.mandarpedido.com/mobile/home">Clique aqui</a> para aproveitar o delivery e receba seu sushi fresquinho!</p>
+      </div>
+
+      <div class="horarios">
+        <h2 class="horarios__titulo">NOSSOS <br> HORÁRIOS</h2>
+        <p class="horarios__texto">Almoço de terça a sábado das <strong>11h30 às 13h30</strong></p>
+        <p class="horarios__texto">Jantar de terça a domingo das <strong>19h às 22h</strong></p>
+      </div>
     </div>
   </section>
 
@@ -194,10 +219,10 @@ Além do serviço de delivery, você pode aproveitar a experiência completa de 
       function scrollToHash(hash) {
         const el = document.querySelector(hash);
         if (!el) return;
-        const offset = getHeaderHeight() + 8;
+        const offset = getHeaderHeight() + 8; // 8px de respiro
         const rectTop = el.getBoundingClientRect().top;
         const targetY = rectTop + window.scrollY - offset;
-        smoothScrollTo(targetY, 1200);
+        smoothScrollTo(targetY, 1200); // 1000ms
       }
 
       links.forEach(link => {

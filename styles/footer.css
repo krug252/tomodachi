@@ -18,18 +18,6 @@
  margin: 0 0 2em 5em;
   
 }
-/* mapa responsivo */
-.mapa {
-  width: 100%;
-  max-width: 420px;
-  aspect-ratio: 1 / 1;
-}
-
-.mapa iframe {
-  width: 100% !important;
-  height: 100% !important;
-  border: 0;
-}
 
 .endereco, .contato {
   flex: 1 1 200px;
@@ -95,8 +83,6 @@
   
   .mapa {
     margin: 0 0 1.5em 3em;
-    max-width: 360px;
-    aspect-ratio: 1 / 1;
   }
   
   .endereco, .contato {
@@ -129,8 +115,6 @@
   .mapa {
     margin: 0 0 1em 0;
     text-align: center;
-    max-width: 320px;
-    aspect-ratio: 1 / 1;
   }
   
   .endereco, .contato {
@@ -166,8 +150,6 @@
   
   .mapa {
     margin: 0 0 0.8em 0;
-    max-width: 280px;
-    aspect-ratio: 1 / 1;
   }
   
   .endereco, .contato {
@@ -204,11 +186,6 @@
     gap: 15px;
   }
   
-  .mapa {
-    max-width: 240px;
-    aspect-ratio: 1 / 1;
-  }
-
   .endereco, .contato {
     font-size: 12px;
   }
