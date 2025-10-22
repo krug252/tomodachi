@@ -46,6 +46,14 @@ margin: 11em 10em 10em 10em;
   justify-content: center;
 }
 
+/* Por padrão, itens extras ficam ocultos mas não quebram layout quando abertos */
+.ver-mais {
+  display: none;
+}
+.ver-mais.open {
+  display: contents; /* permite que os filhos ocupem o mesmo fluxo do grid/flex */
+}
+
 .cardapio__item {
   background-color: #1c1c1c;
   border-radius: 12px;
@@ -241,6 +249,29 @@ margin: 11em 10em 10em 10em;
 
 /* Responsividade para dispositivos móveis grandes (481px - 767px) */
 @media screen and (max-width: 767px) {
+  /* Header mais compacto e em linha no mobile (somente nesta página) */
+  header.topo {
+    padding: 6px 10px;
+  }
+  header.topo .container-topo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 0 0.8em;
+  }
+  .logo-topo {
+    width: 64px;
+  }
+  .menu img {
+    width: 28px;
+    height: auto;
+  }
+  .pedidos__titulo {
+    font-size: 24px;
+    margin: 0;
+  }
+
   .pedidos__introducao {
     margin: 6em 3em 6em 3em;
     gap: 2em;
@@ -263,6 +294,10 @@ margin: 11em 10em 10em 10em;
   .cardapio__item {
     max-width: 180px;
     padding: 1em;
+  }
+  .cardapio__item img {
+    width: 160px;
+    height: 160px;
   }
   
   .cardapio__item h3 {
@@ -303,6 +338,31 @@ margin: 11em 10em 10em 10em;
 
 /* Responsividade para dispositivos móveis pequenos (até 480px) */
 @media screen and (max-width: 480px) {
+  /* Header ainda menor e sem empilhar itens */
+  header.topo {
+    padding: 5px 8px;
+  }
+  header.topo .container-topo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    margin: 0 0.6em;
+  }
+  .logo-topo {
+    width: 56px;
+  }
+  .pedidos__titulo {
+    font-size: 20px;
+    margin: 0;
+  }
+  .menu img {
+    width: 26px;
+    height: auto;
+  }
+  .cardapio {
+    padding: 0 0.5em;
+  }
   .pedidos__introducao {
     margin: 4em 1.5em 4em 1.5em;
     gap: 1.5em;
@@ -325,6 +385,10 @@ margin: 11em 10em 10em 10em;
   .cardapio__item {
     max-width: 150px;
     padding: 0.8em;
+  }
+  .cardapio__item img {
+    width: 120px;
+    height: 120px;
   }
   
   .cardapio__item h3 {

@@ -60,6 +60,8 @@
   margin-bottom: 1.5em;
   justify-content: center;
   flex-wrap: wrap;
+  /* Respiro lateral para o campo não encostar/cortar nas bordas do container */
+  padding: 0 1.25rem;
 }
 
 .newsletter__input {
@@ -74,6 +76,7 @@
   font-size: 1em;
   transition: all 0.3s ease;
   outline: none;
+  box-sizing: border-box;
 }
 
 .newsletter__input::placeholder {
@@ -101,6 +104,7 @@
   min-width: 150px;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .newsletter__button::before {

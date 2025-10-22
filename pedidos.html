@@ -68,8 +68,8 @@
                 <p class="cardapio__preco"><strong>R$ 149,90</strong></p>
             </div>
 
-            <!-- Itens que ficarão escondidos -->
-            <div class="ver-mais" style="display: none;">
+            <!-- Itens extras (iniciam ocultos via CSS) -->
+            <div class="ver-mais">
                 <div class="cardapio__item">
                     <img src="assets/destaques.png" alt="Destaque 5" />
                     <h3>DESTAQUE 5</h3>
@@ -131,8 +131,8 @@
             </div>
 
 
-            <!-- Itens que ficarão escondidos -->
-            <div class="ver-mais" style="display: none;">
+            <!-- Itens extras (iniciam ocultos via CSS) -->
+            <div class="ver-mais">
                 <div class="cardapio__item">
                     <img src="assets/bolinhosushi.png" alt="Bolinhos de Sushi" />
                     <h3>BOLINHO DE SALMÃO</h3>
@@ -192,8 +192,8 @@
                 <p class="cardapio__preco"><strong>R$ 89,90</strong></p>
             </div>
 
-            <!-- Itens que ficarão escondidos -->
-            <div class="ver-mais" style="display: none;">
+            <!-- Itens extras (iniciam ocultos via CSS) -->
+            <div class="ver-mais">
                 <div class="cardapio__item">
                     <img src="assets/imagem__destaque1.svg" alt="Combo Polvo" />
                     <h3>COMBO POLVO</h3>
@@ -251,8 +251,8 @@
                 <p class="cardapio__preco"><strong>R$ 44,90</strong></p>
             </div>
 
-            <!-- Itens que ficarão escondidos -->
-            <div class="ver-mais" style="display: none;">
+            <!-- Itens extras (iniciam ocultos via CSS) -->
+            <div class="ver-mais">
                 <div class="cardapio__item">
                     <img src="assets/poke.png" alt="Poke Polvo" />
                     <h3>POKE POLVO</h3>
@@ -419,14 +419,8 @@
         botoes.forEach((botao, index) => {
             botao.addEventListener("click", () => {
                 const secao = secoes[index];
-
-                if (secao.style.display === "none" || secao.style.display === "") {
-                    secao.style.display = "flex";
-                    botao.textContent = "Ver menos";
-                } else {
-                    secao.style.display = "none";
-                    botao.textContent = "Ver mais";
-                }
+                const aberta = secao.classList.toggle("open");
+                botao.textContent = aberta ? "Ver menos" : "Ver mais";
             });
         });
 
