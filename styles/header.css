@@ -1,6 +1,6 @@
 .topo {
   background-color: #DA0037;
-  padding: 10px 20px;
+  padding: 10px 10px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -106,33 +106,43 @@
 /* Responsividade para dispositivos móveis grandes (481px - 767px) */
 @media screen and (max-width: 767px) {
   .topo {
-    padding: 8px 15px;
+    padding: 15px 15px 12px 15px;
   }
   
   .container-topo {
     margin: 0 1em 0 1em;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
+    align-items: center;
   }
   
   .logo-topo {
     width: 80px;
+    align-self: flex-start;
   }
   
   .menu {
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; /* reforça alinhamento no mobile */
+    padding-top: 4px;
   }
   
   .menu__item {
     font-size: 16px;
+    margin-left: 0;
   }
   
   .pedido {
     font-size: 18px;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    order: 4;
   }
   
   .imagem-central__imagem {
@@ -147,28 +157,42 @@
 /* Responsividade para dispositivos móveis pequenos (até 480px) */
 @media screen and (max-width: 480px) {
   .topo {
-    padding: 6px 10px;
+    padding: 15px 10px 12px 10px;
   }
   
   .container-topo {
     margin: 0 0.5em 0 0.5em;
     gap: 10px;
+    align-items: center;
   }
   
   .logo-topo {
     width: 70px;
+    align-self: flex-start;
   }
   
   .menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     gap: 15px;
+    flex-wrap: wrap;
+    padding-top: 4px;
   }
   
   .menu__item {
     font-size: 14px;
+    margin-left: 0;
   }
   
   .pedido {
     font-size: 16px;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    order: 4;
   }
   
   .imagem-central__imagem {
@@ -188,22 +212,37 @@
 @media screen and (max-width: 320px) {
   .container-topo {
     margin: 0 0.3em 0 0.3em;
+    gap: 8px;
+    align-items: center;
   }
   
   .logo-topo {
     width: 60px;
+    align-self: flex-start;
   }
   
   .menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 4px;
   }
   
   .menu__item {
     font-size: 12px;
+    margin-left: 0;
   }
   
   .pedido {
     font-size: 14px;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    order: 4;
   }
   
   .legenda {

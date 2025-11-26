@@ -259,9 +259,14 @@ margin: 11em 10em 10em 10em;
     justify-content: space-between;
     gap: 8px;
     margin: 0 0.8em;
+    position: relative;
   }
   .logo-topo {
     width: 64px;
+    flex-shrink: 0;
+  }
+  .menu {
+    flex-shrink: 0;
   }
   .menu img {
     width: 28px;
@@ -270,6 +275,11 @@ margin: 11em 10em 10em 10em;
   .pedidos__titulo {
     font-size: 24px;
     margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: nowrap;
   }
 
   .pedidos__introducao {
@@ -348,13 +358,23 @@ margin: 11em 10em 10em 10em;
     justify-content: space-between;
     gap: 6px;
     margin: 0 0.6em;
+    position: relative;
   }
   .logo-topo {
     width: 56px;
+    flex-shrink: 0;
+  }
+  .menu {
+    flex-shrink: 0;
   }
   .pedidos__titulo {
     font-size: 20px;
     margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: nowrap;
   }
   .menu img {
     width: 26px;
