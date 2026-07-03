@@ -7,4 +7,4 @@
 
 <br>
 <br>
-Entirely hand coded
+Mostly hand coded - its a school project
